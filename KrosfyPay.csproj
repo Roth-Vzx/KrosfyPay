@@ -132,11 +132,16 @@
     <Content Include="Content\assets\css\bootsnav.css" />
     <Content Include="Content\assets\css\style.css" />
     <Content Include="Content\assets\css\style.min.css" />
+    <Content Include="Content\assets\img\about.jpg" />
     <Content Include="Content\assets\img\background.jpg" />
     <Content Include="Content\assets\img\competencia.png" />
     <Content Include="Content\assets\img\confiar.png" />
     <Content Include="Content\assets\img\estadisticas.png" />
     <Content Include="Content\assets\img\proteger.png" />
+    <Content Include="Content\assets\img\testimonial-1.jpg" />
+    <Content Include="Content\assets\img\testimonial-2.jpg" />
+    <Content Include="Content\assets\img\testimonial-3.jpg" />
+    <Content Include="Content\assets\img\testimonial-4.jpg" />
     <Content Include="Content\assets\img\transparencia.png" />
     <Content Include="Content\assets\js\animations.js" />
     <Content Include="Content\assets\js\bootstrap.bundle.min.js" />
