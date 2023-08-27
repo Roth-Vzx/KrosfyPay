@@ -139,8 +139,11 @@
     <Content Include="Content\assets\img\proteger.png" />
     <Content Include="Content\assets\img\transparencia.png" />
     <Content Include="Content\assets\js\animations.js" />
+    <Content Include="Content\assets\js\bootstrap.bundle.min.js" />
+    <Content Include="Content\assets\js\jquery-3.4.1.min.js" />
     <Content Include="Content\assets\js\main.js" />
-    <Content Include="Content\assets\lib\counterup\counterup.min.js" />
+    <Content Include="Content\assets\lib\counterup\jquery.counterup.js" />
+    <Content Include="Content\assets\lib\counterup\jquery.counterup.min.js" />
     <Content Include="Content\assets\lib\easing\easing.js" />
     <Content Include="Content\assets\lib\easing\easing.min.js" />
     <Content Include="Content\assets\lib\owlcarousel\assets\ajax-loader.gif" />
