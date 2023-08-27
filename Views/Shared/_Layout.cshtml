@@ -1,4 +1,10 @@
-﻿<!DOCTYPE html>
+﻿@{
+    string currentAction = ViewContext.RouteData.Values["action"].ToString();
+    string propertyActive = "nav-item nav-link active";
+    string defaultProperty = "nav-item nav-link";
+}
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
@@ -25,7 +31,7 @@
     <!-- Navbar Start -->
     <div class="container-fluid p-0">
         <nav class="navbar fixed-top navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
-            <a href="index.html" class="navbar-brand ml-lg-3">
+            <a href="@Url.Action("Index", "Home")" class="navbar-brand ml-lg-3">
                 <h1 class="m-0 display-5  text-primary">Krosfy Pay</h1>
             </a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -33,9 +39,9 @@
             </button>
             <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
                 <div class="navbar-nav m-auto py-0">
-                    <li>@Html.ActionLink("Inicio", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("Empresas", "Empresa", "Empresas", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("Contacto", "Contacto", "Contacto", new { area = "" }, new { @class = "nav-link" })</li>
+                    @Html.ActionLink("Inicio", "Index", "Home", new { area = "" }, new { @class = currentAction == "Index" ? propertyActive : defaultProperty })
+                    @Html.ActionLink("Empresas", "Empresa", "Empresas", new { area = "" }, new { @class = currentAction == "Empresa" ? propertyActive : defaultProperty })
+                    @Html.ActionLink("Contacto", "Contacto", "Contacto", new { area = "" }, new { @class = currentAction == "Contacto" ? propertyActive : defaultProperty })
                 </div>
 
                 <a href="" class="btn btn-light py-2 px-4 d-none d-lg-block mr-2">Iniciar sesión</a>
