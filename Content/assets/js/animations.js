@@ -5,8 +5,9 @@ const observerScaleUp = new IntersectionObserver(
     elementos => {
         elementos.forEach(
             elemento => {
-
-            elemento.target.classList.add("scale-up-center", elemento.isIntersecting)
+                if (elemento.isIntersecting) {
+                    elemento.target.classList.add("scale-up-center");
+                }
         }
         )
     })
@@ -15,8 +16,10 @@ const observerSlideRight = new IntersectionObserver(
     elementos => {
         elementos.forEach(
             elemento => {
-    
-            elemento.target.classList.add("slide-right", elemento.isIntersecting)
+                if (elemento.isIntersecting)
+                {
+                    elemento.target.classList.add("slide-right");
+                }
         }
         )
     })
