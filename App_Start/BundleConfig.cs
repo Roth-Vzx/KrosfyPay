@@ -36,16 +36,42 @@ namespace KrosfyPay
                         "~/Content/assets/js/bootstrap.bundle.min.js.map"));
 
             bundles.Add(new ScriptBundle("~/bundles/jsLibrary").Include(
-                        "~/Content/assets/lib/easing/easing.min.js",
-                        "~/Content/assets/lib/waypoints/waypoints.min.js",
                         "~/Content/assets/lib/counterup/jquery.counterup.js",
-                        "~/Content/assets/lib/counterup/jquery.counterup.min.js",
+                        "~/Content/assets/lib/waypoints/waypoints.min.js",
+                        "~/Content/assets/lib/easing/easing.min.js",
                         "~/Content/assets/lib/owlcarousel/owl.carousel.min.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/mail").Include(
                         "~/Content/assets/mail/jqBootstrapValidation.min.js",
                         "~/Content/assets/mail/contact.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/jsLogin").Include(
+                        "~/Content/assets/loginResource/popper_1.14.0.min.js"));
+
+            bundles.Add(new StyleBundle("~/Content/cssLogin").Include(
+                      "~/Content/assets/loginResource/css/awesome_5.11.2.min.css",
+                      "~/Content/assets/loginResource/css/bootstrap_4.1.0.min.css"));
+
+            bundles.Add(new StyleBundle("~/Content/cssDashboard").Include(
+                      "~/Content/assets/dashboardResources/css/sb-admin-2.css",
+                      "~/Content/assets/dashboardResources/vendor/fontawesome-free/css/all.min.css",
+                      "~/Content/assets/dashboardResources/css/sb-admin-2.css"));
+
+            bundles.Add(new ScriptBundle("~/bundles/jsDashboard").Include(
+                        "~/Content/assets/dashboardResources/vendor/jquery-easing/jquery.easing.js",
+                        "~/Content/assets/dashboardResources/js/sb-admin-2.js",
+                        "~/Content/assets/dashboardResources/vendor/chart.js/Chart.min.js",
+                        "~/Content/assets/dashboardResources/js/demo/chart-area-demo.js",
+                        "~/Content/assets/dashboardResources/js/demo/chart-pie-demo.js"
+                        ));
+
+            bundles.Add(new ScriptBundle("~/bundles/jqueryDashboard").Include(
+                        "~/Content/assets/dashboardResources/vendor/jquery/jquery.min.js",
+                        "~/Content/assets/dashboardResourcesvendor/bootstrap/js/bootstrap.bundle.min.js"));
+
+            
+
+         
 
 
         }
