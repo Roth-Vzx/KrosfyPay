@@ -1913,11 +1913,11 @@ pre code {
 }
 
 .form-control:focus {
-  color: #495057;
-  background-color: #fff;
-  border-color: #ffa480;
-  outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(255, 72, 0, 0.25);
+    color: #495057;
+    background-color: #fff;
+    border-color: #a64be3;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem #ca8ef1;
 }
 
 .form-control::placeholder {
@@ -3522,7 +3522,7 @@ input[type="button"].btn-block {
 }
 
 .custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
-  border-color: #ffa480;
+  border-color: ##a64be3;
 }
 
 .custom-control-input:not(:disabled):active ~ .custom-control-label::before {
@@ -3655,7 +3655,7 @@ input[type="button"].btn-block {
 }
 
 .custom-select:focus {
-  border-color: #ffa480;
+  border-color: ##a64be3;
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(255, 72, 0, 0.25);
 }
@@ -3719,7 +3719,7 @@ input[type="button"].btn-block {
 }
 
 .custom-file-input:focus ~ .custom-file-label {
-  border-color: #ffa480;
+  border-color: ##a64be3;
   box-shadow: 0 0 0 0.2rem rgba(255, 72, 0, 0.25);
 }
 

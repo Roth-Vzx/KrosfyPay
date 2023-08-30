@@ -58,7 +58,7 @@ namespace KrosfyPay
                 .Add(new StyleBundle("~/Content/cssDashboard")
                 .Include(
                       "~/Content/assets/dashboardResources/vendor/fontawesome-free/css/all.min.css",
-                      "~/Content/assets/dashboardResources/css/sb-admin-2.min.css"
+                      "~/Content/assets/dashboardResources/css/sb-admin-2.css"
                  ));
 
             bundles
