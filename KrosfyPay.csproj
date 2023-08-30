@@ -2472,7 +2472,7 @@
     <Content Include="Views\Empresas\Empresa.cshtml" />
     <Content Include="Views\Contacto\Contacto.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
-    <Content Include="Views\Register\Register.cshtml" />
+    <Content Include="Views\Register\Index.cshtml" />
     <Content Include="Views\Shared\_LayoutDashboard.cshtml" />
     <Content Include="Views\Dashboard\Index.cshtml" />
   </ItemGroup>

@@ -48,8 +48,8 @@
                     @Html.ActionLink("Contacto", "Contacto", "Contacto", new { area = "" }, new { @class = currentAction == "Contacto" ? propertyActive : defaultProperty })
                 </div>
 
-                <a href="" class="btn btn-light py-2 px-4 d-none d-lg-block mr-2">Iniciar sesión</a>
-                <a href="" class="btn btn-secondary py-2 px-4 d-none d-lg-block">¡Comienza gratis!</a>
+                <a href="@Url.Action("Index", "Login")" class="btn btn-light py-2 px-4 d-none d-lg-block mr-2">Iniciar sesión</a>
+                <a href="@Url.Action("Index", "Register")" class="btn btn-secondary py-2 px-4 d-none d-lg-block">¡Comienza gratis!</a>
             </div>
         </nav>
     </div>

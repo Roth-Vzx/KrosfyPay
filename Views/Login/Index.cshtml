@@ -1,19 +1,8 @@
 ﻿
 @{
-    ViewBag.Title = "KrosfyPay - Login";
+    ViewBag.Title = "KrosfyPay - Iniciar Sesión";
 }
 
-<html>
-<head>
-    <meta charset="utf-8">
-
-    <!-- Favicon -->
-    <link href="~/Content/assets/img/favicon.ico" rel="icon">
-
-    <!-- Libraries Stylesheet -->
-    @Styles.Render("~/Content/cssLogin")
-
-</head>
 <body>
     <section class="pt-5 pb-5 mt-0 align-items-center d-flex bg-dark" style="min-height: 100vh; background-size: cover; background-image: url(https://images.unsplash.com/photo-1477346611705-65d1883cee1e?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1920&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=c0d43804e2c7c93143fe8ff65398c8e9);">
         <div class="container-fluid">
@@ -49,7 +38,7 @@
                                 </p>
                                 <p class="text-center">
                                     ¿No tienes una cuenta?
-                                    <a href="">Registrate</a>
+                                    <a href="@Url.Action("Index", "Register")">Registrate</a>
                                 </p>
                                 @if (!string.IsNullOrEmpty((string)TempData["ERROR"]))
                                 {
@@ -78,5 +67,5 @@
     @Scripts.Render("~/bundles/jsLogin")
 
 </body>
-</html>
+
 
