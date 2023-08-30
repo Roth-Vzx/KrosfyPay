@@ -11,6 +11,8 @@ namespace KrosfyPay.Controllers
         // GET: Dashboard
         public ActionResult Index()
         {
+            if (!HttpContext.GetOwinContext().Authentication.User.Identity.IsAuthenticated)
+                return RedirectToAction("Index", "Login");
             return View();
         }
     }
